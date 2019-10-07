@@ -39,7 +39,7 @@
       <li><a href="#news">News</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#others">Others</a></li>
-      <li><a href="files/ruikunl.pdf">CV</a></li>
+      <li><a href="files/ruikunl_cv.pdf">CV</a></li>
     </ul>
   </div>
   </div>
@@ -202,8 +202,19 @@
     </div>
     <div class="col-md-6">
       <p>
-    We focused on the human robot collaboration in shared workspace.
-
+    This project focuses on human-robot collaboration in industrial manipulation tasks that take place in a shared workspace. In this setting, we consider both the adaptation of the robot and the adaptation of the human.
+      </p>
+      <p>
+    <b> Robot Adapts to Human:</b>
+    We wish to predict, as quickly as possible, the human’s reaching motion so that the robot can avoid interference while performing a complimentary task.
+    Given an observed part of a human’s reaching motion, we thus wish to predict the remainder of the trajectory, and demonstrate that this is effective as a real-time input to the robot for human-robot collaboration tasks.
+    We proposed a two layer framework of Gaussian Mixture Models and an unsupervised online learning algorithm that updates these models with newly-observed trajectories.
+    The proposed method can build models on-the-fly and adapt to new people and new motion styles as they emerge which requires no manual labeling.
+    We also present two human-robot workspace sharing experiments of varying difficulty where the robot predicts the human's motion every 0.1s.
+    The results show that our framework can use human motion predictions to decide on robot motions that avoid the human in real-time applications with high reliability.
+      </p>
+      <p>
+        <b>Human Adapts to Robot:</b>
 
       </p>
 
