@@ -206,8 +206,7 @@
       </p>
       <p>
     <b> Robot Adapts to Human:</b>
-    We wish to predict, as quickly as possible, the human’s reaching motion so that the robot can avoid interference while performing a complimentary task.
-    Given an observed part of a human’s reaching motion, we thus wish to predict the remainder of the trajectory, and demonstrate that this is effective as a real-time input to the robot for human-robot collaboration tasks.
+        Given an observed part of a human's reaching motion, we wish to predict, as quickly as possible, the remainder of the trajectory so that the robot can avoid interference while performing a complimentary task.
     We proposed a two layer framework of Gaussian Mixture Models and an unsupervised online learning algorithm that updates these models with newly-observed trajectories.
     The proposed method can build models on-the-fly and adapt to new people and new motion styles as they emerge which requires no manual labeling.
     We also present two human-robot workspace sharing experiments of varying difficulty where the robot predicts the human's motion every 0.1s.
@@ -215,7 +214,11 @@
       </p>
       <p>
         <b>Human Adapts to Robot:</b>
-
+        In stead of online selecting robot motions, we consider offline motion planning of the robot.
+        To be effective for human-robot collaboration a robot should plan its motion so that it is both safe and efficient.
+        To achieve this, we propose two factors to consider in the cost function for the robot’s motion planner:
+        (1) Avoidance of the workspace previously-occupied by the human, so that the motion is as safe as possible,
+        and (2) Consistency of the robot’s motion, so that the motion is as predictable as possible for the human and they can perform their task without focusing undue attention on the robot.
       </p>
 
       <br/>
